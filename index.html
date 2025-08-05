@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université de Moundou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">Université-Moundou</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="showPage('accueil')" class="nav-link active">Accueil</a></li>
+                        <li><a href="#" onclick="showPage('info')" class="nav-link">À propos</a></li>
+                        <li><a href="#" onclick="showPage('personnel')" class="nav-link">Personnel</a></li>
+                        <li><a href="#" onclick="showPage('database')" class="nav-link">Base de données</a></li>
+                        <li><a href="#" onclick="showPage('inscription')" class="nav-link">Inscription</a></li>
+                        <li><a href="#" onclick="showPage('galerie')" class="nav-link">Galerie</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+    <!-- Page d'accueil -->
+<div id="accueil" class="page active">
+    <div class="hero">
+        <h1>Bienvenue à l'université de Moundou</h1>
+        <p>Votre avenir commence ici - Excellence académique, Innovation et Réussite</p>
+        <a href="#" onclick="showPage('inscription')" class="btn">S'inscrire maintenant</a>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-number" id="studentCount">0</div>
+            <div>Étudiants inscrits</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">150+</div>
+            <div>Programmes d'études</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div>Professeurs experts</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">95%</div>
+            <div>Taux de réussite</div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Programmes d'Excellence</h3>
+            <p>Des cursus innovants adaptés aux besoins du marché du travail moderne.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔬</div>
+            <h3>Recherche de Pointe</h3>
+            <p>Laboratoires équipés des dernières technologies pour vos projets de recherche.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>Ouverture Internationale</h3>
+            <p>Programmes d'échanges et partenariats avec des universités du monde entier.</p>
+        </div>
+    </div>
+</div>
+    
+<!-- Page informations -->
+<div id="info" class="page">
+    <h1>À propos de l'Université Excellence</h1>
+    <div class="feature-card">
+        <h2>Notre Mission</h2>
+        <p>L'Université Excellence s'engage à fournir une éducation de qualité supérieure, à promouvoir la recherche innovante et à préparer les leaders de demain. Fondée en 1985, notre institution a formé plus de 50 000 diplômés qui excellent dans leurs domaines respectifs.</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🏛️</div>
+            <h3>Histoire</h3>
+            <p>Fondée en 1985, notre université a une riche histoire d'excellence académique et d'innovation pédagogique.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Vision</h3>
+            <p>Être reconnue comme l'université de référence pour l'innovation, la recherche et la formation de qualité.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Valeurs</h3>
+            <p>Excellence, Intégrité, Innovation, Diversité et Engagement communautaire guident toutes nos actions.</p>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <h2>Campus et Infrastructures</h2>
+        <p>Notre campus moderne s'étend sur 150 hectares et comprend des amphithéâtres équipés des dernières technologies, des laboratoires de recherche de pointe, une bibliothèque de 2 millions d'ouvrages, des résidences étudiantes, et des espaces de vie étudiante dynamiques.</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">📖</div>
+            <h3>Bibliothèque Universitaire</h3>
+            <p>2 millions d'ouvrages, espaces de travail modernes, accès numérique 24h/24.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🏃‍♀️</div>
+            <h3>Installations Sportives</h3>
+            <p>Complexe sportif complet avec piscine, gymnases, terrains de sport et centre fitness.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🏠</div>
+            <h3>Résidences Étudiantes</h3>
+            <p>Logements modernes et confortables sur le campus pour 3000 étudiants.</p>
+        </div>
+    </div>
+</div>    
+    
+<!-- Page personnel -->
+<div id="personnel" class="page">
+    <h1>Notre Personnel Académique</h1>
+    <p>Découvrez notre équipe de professeurs et chercheurs dévoués à votre réussite.</p>
+
+    <div class="staff-grid">
+        <div class="staff-card">
+            <div class="staff-avatar">👩‍🏫</div>
+            <div class="staff-info">
+                <h3>Dr. Jean-Pierre Martin</h3>
+                <p><strong>Recteur</strong></p>
+                <p>Docteur en Sciences de l'Éducation, 25 ans d'expérience dans l'enseignement supérieur.</p>
+                <div class="staff-contact">
+                    <p>📧 j.martin@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 01</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="staff-card">
+            <div class="staff-avatar">👩‍🔬</div>
+            <div class="staff-info">
+                <h3>Prof. Marie Dubois</h3>
+                <p><strong>Doyen de la Faculté des Sciences</strong></p>
+                <p>Spécialisée en physique quantique, auteure de 150+ publications scientifiques.</p>
+                <div class="staff-contact">
+                    <p>📧 m.dubois@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 02</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="staff-card">
+            <div class="staff-avatar">👨‍💼</div>
+            <div class="staff-info">
+                <h3>Dr. Ahmed Benali</h3>
+                <p><strong>Directeur des Admissions</strong></p>
+                <p>Expert en gestion académique et développement des programmes d'études.</p>
+                <div class="staff-contact">
+                    <p>📧 a.benali@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 03</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="staff-card">
+            <div class="staff-avatar">👩‍💻</div>
+            <div class="staff-info">
+                <h3>Prof. Sarah Johnson</h3>
+                <p><strong>Responsable Innovation Pédagogique</strong></p>
+                <p>Pionnière dans l'intégration des nouvelles technologies en éducation.</p>
+                <div class="staff-contact">
+                    <p>📧 s.johnson@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 04</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="staff-card">
+            <div class="staff-avatar">👨‍🎨</div>
+            <div class="staff-info">
+                <h3>Dr. Pierre Leroy</h3>
+                <p><strong>Doyen des Arts et Lettres</strong></p>
+                <p>Historien de l'art reconnu, spécialiste de la Renaissance française.</p>
+                <div class="staff-contact">
+                    <p>📧 p.leroy@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 05</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="staff-card">
+            <div class="staff-avatar">👩‍⚕️</div>
+            <div class="staff-info">
+                <h3>Dr. Elena Rodriguez</h3>
+                <p><strong>Directrice Santé Étudiante</strong></p>
+                <p>Médecin et psychologue, dédiée au bien-être de nos étudiants.</p>
+                <div class="staff-contact">
+                    <p>📧 e.rodriguez@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 06</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="staff-card">
+            <div class="staff-avatar">👨‍🏛️</div>
+            <div class="staff-info">
+                <h3>Prof. Michel Dupont</h3>
+                <p><strong>Doyen de la Faculté de Droit</strong></p>
+                <p>Juriste international, expert en droit européen et commercial.</p>
+                <div class="staff-contact">
+                    <p>📧 m.dupont@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 07</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="staff-card">
+            <div class="staff-avatar">👩‍🎓</div>
+            <div class="staff-info">
+                <h3>Dr. Fatima Al-Zahra</h3>
+                <p><strong>Directrice des Relations Internationales</strong></p>
+                <p>Polyglotte, coordonne les échanges avec 200+ universités partenaires.</p>
+                <div class="staff-contact">
+                    <p>📧 f.alzahra@universite-excellence.fr</p>
+                    <p>📞 +235 63 00 00 08</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    
+<!-- Page base de données -->
+<div id="database" class="page">
+    <h1>Gestion de la Base de Données Étudiants</h1>
+    
+    <div class="database-controls">
+        <div class="search-container">
+            <input type="text" id="studentSearch" placeholder="Rechercher un étudiant (nom, email, programme)..." onkeyup="searchStudents()">
+            <button class="btn-secondary" onclick="exportStudentData()">📊 Exporter CSV</button>
+            <button class="btn-secondary" onclick="clearAllStudents()">🗑️ Vider la base</button>
+        </div>
+
+        <div class="filter-container">
+            <select id="programmeFilter" onchange="filterStudents()">
+                <option value="">Tous les programmes</option>
+                <option value="sciences">Sciences et Technologie</option>
+                <option value="arts">Arts et Lettres</option>
+                <option value="commerce">Commerce et Gestion</option>
+                <option value="medecine">Médecine</option>
+                <option value="droit">Droit</option>
+                <option value="education">Sciences de l'Éducation</option>
+            </select>
+            
+            <select id="niveauFilter" onchange="filterStudents()">
+                <option value="">Tous les niveaux</option>
+                <option value="licence">Licence</option>
+                <option value="master">Master</option>
+                <option value="doctorat">Doctorat</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="database-section">
+        <h2>Étudiants Inscrits (<span id="studentListCount">0</span>)</h2>
+        <div id="studentList" class="student-list">
+            <p>Aucun étudiant inscrit pour le moment.</p>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <h2>Statistiques Détaillées</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalStudents">0</div>
+                <div>Total étudiants</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="scienceStudents">0</div>
+                <div>Sciences</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="artsStudents">0</div>
+                <div>Arts et Lettres</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="businessStudents">0</div>
+                <div>Commerce</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="medecineStudents">0</div>
+                <div>Médecine</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="droitStudents">0</div>
+                <div>Droit</div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="licenceStudents">0</div>
+                <div>Licence</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="masterStudents">0</div>
+                <div>Master</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="doctoratStudents">0</div>
+                <div>Doctorat</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="averageAge">0</div>
+                <div>Âge moyen</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="database-section">
+        <h2>Actions rapides</h2>
+        <div class="quick-actions">
+            <button class="btn" onclick="addSampleData()">➕ Ajouter des données d'exemple</button>
+            <button class="btn-secondary" onclick="sortStudents('nom')">🔄 Trier par nom</button>
+            <button class="btn-secondary" onclick="sortStudents('dateInscription')">📅 Trier par date</button>
+        </div>
+    </div>
+</div>    
+    
+<!-- Page inscription -->
+<!-- Page inscription complète avec validation Tchad + pays voisins -->
+<div id="inscription" class="page">
+    <h1>Formulaire d'Inscription</h1>
+    <p>Rejoignez notre communauté d'étudiants excellents !</p>
+
+    <div class="form-container">
+        <form id="inscriptionForm" novalidate>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nom">Nom complet *</label>
+                    <input type="text" id="nom" name="nom" required placeholder="Ex: Jean Dupont" autocomplete="name">
+                    <span class="form-error" id="nomError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Ex: jean.dupont@email.com" autocomplete="email">
+                    <span class="form-error" id="emailError"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="telephone">
+                        📞 Numéro de téléphone * 
+                        <button type="button" onclick="showRegionalPhoneExamples()" 
+                                style="background: none; border: none; color: #e17055; cursor: pointer; font-size: 0.8rem; margin-left: 0.5rem; font-weight: bold;"
+                                title="Voir les formats acceptés">
+                            🇹🇩 Exemples
+                        </button>
+                    </label>
+                    <input type="tel" 
+                           id="telephone" 
+                           name="telephone" 
+                           required 
+                           placeholder="Ex: 66 12 34 56 (Tchad) ou +237 6 77 12 34 56 (Cameroun)..."
+                           autocomplete="tel"
+                           maxlength="25"
+                           style="font-family: 'Courier New', monospace; letter-spacing: 0.5px;">
+                    <span class="form-error" id="telephoneError"></span>
+                    <div class="phone-help" style="margin-top: 0.25rem; font-size: 0.8rem; color: #666; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>🇹🇩🇨🇲🇨🇫🇸🇩🇳🇬🇳🇪🇱🇾</span>
+                        <span>Tchad + pays voisins + international</span>
+                    </div>
+                    <!-- Le conteneur pour l'affichage du pays sera ajouté automatiquement -->
+                </div>
+
+                <div class="form-group">
+                    <label for="dateNaissance">Date de naissance *</label>
+                    <input type="date" id="dateNaissance" name="dateNaissance" required>
+                    <span class="form-error" id="dateNaissanceError"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="programme">Programme d'études *</label>
+                    <select id="programme" name="programme" required>
+                        <option value="">-- Sélectionnez un programme --</option>
+                        <option value="sciences">Sciences et Technologie</option>
+                        <option value="arts">Arts et Lettres</option>
+                        <option value="commerce">Commerce et Gestion</option>
+                        <option value="medecine">Médecine</option>
+                        <option value="droit">Droit</option>
+                        <option value="education">Sciences de l'Éducation</option>
+                    </select>
+                    <span class="form-error" id="programmeError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="niveau">Niveau d'études *</label>
+                    <select id="niveau" name="niveau" required>
+                        <option value="">-- Sélectionnez un niveau --</option>
+                        <option value="licence">Licence (Bachelor)</option>
+                        <option value="master">Master</option>
+                        <option value="doctorat">Doctorat (PhD)</option>
+                    </select>
+                    <span class="form-error" id="niveauError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="adresse">Adresse complète</label>
+                <textarea id="adresse" name="adresse" rows="3" placeholder="Adresse, code postal, ville..." autocomplete="street-address"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">Lettre de motivation</label>
+                <textarea id="motivation" name="motivation" rows="5" placeholder="Expliquez vos motivations pour rejoindre notre université..." maxlength="1000"></textarea>
+                <small style="color: #666; font-size: 0.8rem;">Maximum 1000 caractères</small>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="termes" name="termes" required>
+                    <span class="checkmark"></span>
+                    J'accepte les <a href="javascript:void(0)" onclick="showTerms()">conditions d'utilisation</a> et la politique de confidentialité *
+                </label>
+                <span class="form-error" id="termesError"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <span class="checkmark"></span>
+                    Je souhaite recevoir la newsletter de l'université
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn-secondary" onclick="resetForm()">🔄 Réinitialiser</button>
+                <button type="submit" class="btn" id="submitBtn">
+                    <span id="submitText">✅ Soumettre ma candidature</span>
+                    <span id="submitLoading" style="display: none;">⏳ Traitement...</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Section d'aide -->
+    <div class="form-help">
+        <h3>💡 Aide à l'inscription</h3>
+        <div class="help-grid">
+            <div class="help-item">
+                <h4>📋 Documents requis</h4>
+                <p>Diplômes, relevés de notes, pièce d'identité</p>
+            </div>
+            <div class="help-item">
+                <h4>💰 Frais d'inscription</h4>
+                <p>À partir de 200€/an selon le programme</p>
+            </div>
+            <div class="help-item">
+                <h4>📞 Besoin d'aide ?</h4>
+                <p>Contactez le service des admissions au<br>📞 +235 22 51 12 34</p>
+            </div>
+            <div class="help-item">
+                <h4>⏰ Délais</h4>
+                <p>Réponse sous 48h ouvrées après soumission</p>
+            </div>
+            <div class="help-item">
+                <h4>🇹🇩 Support local</h4>
+                <p>Assistance en français et arabe<br>Bureaux à N'Djaména</p>
+            </div>
+            <div class="help-item">
+                <h4>🌍 International</h4>
+                <p>Étudiants de tous pays bienvenus<br>Programmes d'échanges disponibles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aperçu en temps réel -->
+    <div class="form-preview" id="formPreview" style="display: none;">
+        <h3>📋 Aperçu de votre candidature</h3>
+        <div id="previewContent"></div>
+        <button type="button" class="btn-secondary" onclick="hidePreview()">Masquer l'aperçu</button>
+    </div>
+</div>
+
+<!-- Page galerie (séparée) -->
+<div id="galerie" class="page">
+    <h1>Galerie des Étudiants</h1>
+    <p>Découvrez les visages de notre communauté étudiante dynamique !</p>
+
+    <div class="gallery-controls">
+        <button class="btn-secondary" onclick="refreshGallery()">🔄 Actualiser</button>
+        <button class="btn-secondary" onclick="downloadGallery()">📸 Télécharger</button>
+        <button class="btn-secondary" onclick="showGalleryStats()">📊 Statistiques</button>
+    </div>
+
+    <div class="student-gallery" id="studentGallery">
+        <!-- Photos générées dynamiquement -->
+    </div>
+
+    <div class="feature-card">
+        <h2>🎓 Vie Étudiante</h2>
+        <p>Notre université offre une vie étudiante riche et diversifiée avec plus de 50 clubs et associations, des événements culturels réguliers, des compétitions sportives, et de nombreuses opportunités de développement personnel et professionnel.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎭</div>
+                <h3>Clubs et Associations</h3>
+                <p>Plus de 50 clubs étudiants actifs dans tous les domaines : théâtre, musique, sport, sciences, débat...</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Compétitions</h3>
+                <p>Participez aux championnats universitaires, concours académiques et olympiades scientifiques.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎉</div>
+                <h3>Événements</h3>
+                <p>Soirées d'intégration, festivals culturels, conférences et rencontres professionnelles toute l'année.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>International</h3>
+                <p>Programmes d'échange avec 200+ universités partenaires dans 50 pays.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3>Carrière</h3>
+                <p>Service d'aide à l'emploi, stages en entreprise et réseau d'anciens diplômés.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏥</div>
+                <h3>Bien-être</h3>
+                <p>Service de santé étudiante, soutien psychologique et activités de détente.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Galerie des étudiants -->
+<div id="galerie" class="page">
+    <h1>Galerie des Étudiants</h1>
+    <p>Découvrez les visages de notre communauté étudiante dynamique !</p>
+
+    <div class="gallery-controls">
+        <button class="btn-secondary" onclick="refreshGallery()">🔄 Actualiser</button>
+        <button class="btn-secondary" onclick="downloadGallery()">📸 Télécharger</button>
+    </div>
+
+    <div class="student-gallery" id="studentGallery">
+        <!-- Photos générées dynamiquement -->
+        <img src="bénis.jpg" alt="">
+    </div>
+
+    <div class="feature-card">
+        <h2>Vie Étudiante</h2>
+        <p>Notre université offre une vie étudiante riche et diversifiée avec plus de 50 clubs et associations, des événements culturels réguliers, des compétitions sportives, et de nombreuses opportunités de développement personnel et professionnel.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎭</div>
+                <h3>Clubs et Associations</h3>
+                <p>Plus de 50 clubs étudiants actifs dans tous les domaines.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Compétitions</h3>
+                <p>Participez aux championnats universitaires et concours académiques.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎉</div>
+                <h3>Événements</h3>
+                <p>Soirées, festivals, conférences et rencontres tout au long de l'année.</p>
+            </div>
+        </div>
+    </div>
+</div>  
+  
+  <script>
+  
+let students = [];
+
+
+function showPage(pageId) {
+    // Cacher toutes les pages
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+
+  
+    document.getElementById(pageId).classList.add('active');
+
+   
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.classList.remove('active'));
+    event.target.classList.add('active');
+
+   
+    switch(pageId) {
+        case 'galerie':
+            generateStudentGallery();
+            break;
+        case 'database':
+            updateDatabase();
+            break;
+        case 'accueil':
+            animateStats();
+            break;
+    }
+}
+
+
+function initializeForm() {
+    const form = document.getElementById('inscriptionForm');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!validateForm()) {
+            showNotification('Veuillez corriger les erreurs dans le formulaire.', 'error');
+            return;
+        }
+        
+        const formData = new FormData(this);
+        const student = {
+            id: Date.now(),
+            nom: formData.get('nom'),
+            email: formData.get('email'),
+            telephone: formData.get('telephone'),
+            dateNaissance: formData.get('dateNaissance'),
+            programme: formData.get('programme'),
+            niveau: formData.get('niveau'),
+            adresse: formData.get('adresse') || 'Non renseignée',
+            motivation: formData.get('motivation') || 'Non renseignée',
+            newsletter: formData.get('newsletter') ? 'Oui' : 'Non',
+            dateInscription: new Date().toLocaleDateString('fr-FR')
+        };
+
+        
+        const emailExists = students.some(s => s.email === student.email);
+        if (emailExists) {
+            showNotification('Un étudiant avec cet email est déjà inscrit.', 'error');
+            return;
+        }
+
+        students.push(student);
+        updateStats();
+        
+        showNotification(`Inscription réussie ! Bienvenue ${student.nom} à l'Université Excellence !`, 'success');
+        this.reset();
+        clearFormErrors();
+        
+       
+        setTimeout(() => {
+            showPage('database');
+        }, 2000);
+    });
+
+   
+    const inputs = form.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('blur', () => validateField(input));
+        input.addEventListener('input', () => {
+            if (input.classList.contains('error')) {
+                validateField(input);
+            }
+        });
+    });
+}
+
+
+function validateForm() {
+    const form = document.getElementById('inscriptionForm');
+    const inputs = form.querySelectorAll('input[required], select[required]');
+    let isValid = true;
+
+    inputs.forEach(input => {
+        if (!validateField(input)) {
+            isValid = false;
+        }
+    });
+
+    
+    const termes = document.getElementById('termes');
+    if (!termes.checked) {
+        showFieldError('termes', 'Vous devez accepter les conditions d\'utilisation');
+        isValid = false;
+    } else {
+        clearFieldError('termes');
+    }
+
+    return isValid;
+}
+
+
+// ==========================================
+// JAVASCRIPT INSCRIPTION COMPLET - TCHAD + PAYS VOISINS
+// ==========================================
+
+// Base de données téléphonique - Tchad et pays voisins + International
+const REGIONAL_PHONE_DATA = {
+    // TCHAD ET PAYS VOISINS
+    '235': { 
+        name: 'Tchad', 
+        flag: '🇹🇩', 
+        region: 'Afrique Centrale', 
+        format: '+235 XX XX XX XX', 
+        length: [8],
+        examples: ['+235 66 12 34 56', '+235 77 98 76 54', '+235 90 11 22 33'],
+        operators: ['Airtel', 'Tigo', 'Salam']
+    },
+    '237': { 
+        name: 'Cameroun', 
+        flag: '🇨🇲', 
+        region: 'Afrique Centrale', 
+        format: '+237 X XX XX XX XX', 
+        length: [9],
+        examples: ['+237 6 77 12 34 56', '+237 6 90 98 76 54'],
+        operators: ['MTN', 'Orange', 'Nexttel']
+    },
+    '236': { 
+        name: 'République Centrafricaine', 
+        flag: '🇨🇫', 
+        region: 'Afrique Centrale', 
+        format: '+236 XX XX XX XX', 
+        length: [8],
+        examples: ['+236 70 12 34 56', '+236 75 98 76 54'],
+        operators: ['Orange', 'Telecel', 'Moov']
+    },
+    '249': { 
+        name: 'Soudan', 
+        flag: '🇸🇩', 
+        region: 'Afrique de l\'Est', 
+        format: '+249 XXX XXX XXX', 
+        length: [9],
+        examples: ['+249 912 123 456', '+249 155 987 654'],
+        operators: ['Zain', 'MTN', 'Sudani']
+    },
+    '234': { 
+        name: 'Nigéria', 
+        flag: '🇳🇬', 
+        region: 'Afrique de l\'Ouest', 
+        format: '+234 XXX XXX XXXX', 
+        length: [10],
+        examples: ['+234 803 123 4567', '+234 701 987 6543'],
+        operators: ['MTN', 'Airtel', 'Glo', '9mobile']
+    },
+    '227': { 
+        name: 'Niger', 
+        flag: '🇳🇪', 
+        region: 'Afrique de l\'Ouest', 
+        format: '+227 XX XX XX XX', 
+        length: [8],
+        examples: ['+227 96 12 34 56', '+227 90 98 76 54'],
+        operators: ['Airtel', 'Orange', 'Moov']
+    },
+    '218': { 
+        name: 'Libye', 
+        flag: '🇱🇾', 
+        region: 'Afrique du Nord', 
+        format: '+218 XX XXX XXXX', 
+        length: [9],
+        examples: ['+218 91 123 4567', '+218 92 987 6543'],
+        operators: ['Libyana', 'Al-Madar', 'Libya Phone']
+    }
+};
+
+// ==========================================
+// FONCTIONS DE VALIDATION TÉLÉPHONIQUE
+// ==========================================
+
+// Validation spécialisée pour la région
+function validateRegionalPhone(phone) {
+    if (!phone || phone.length < 8) return false;
+    
+    // Nettoyer le numéro
+    const cleanPhone = phone.replace(/[\s\-\(\)\+]/g, '');
+    
+    // Vérifier que ce sont des chiffres
+    if (!/^\d+$/.test(cleanPhone)) return false;
+    
+    // Longueur minimale et maximale
+    if (cleanPhone.length < 8 || cleanPhone.length > 15) return false;
+    
+    // Détecter le pays de la région
+    const countryInfo = detectRegionalCountry(phone);
+    
+    if (countryInfo) {
+        const nationalNumber = cleanPhone.replace(new RegExp(`^${countryInfo.code}`), '');
+        // Vérifier si la longueur correspond
+        return countryInfo.data.length.includes(nationalNumber.length);
+    }
+    
+    // Validation générale pour numéros internationaux non régionaux
+    const internationalRegex = /^\+?[1-9]\d{1,3}\d{6,12}$/;
+    return internationalRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
+}
+
+// Détection du pays dans la région
+function detectRegionalCountry(phone) {
+    const cleaned = phone.replace(/\D/g, '');
+    
+    // Vérifier les codes de la région (triés par longueur décroissante)
+    const sortedCodes = Object.keys(REGIONAL_PHONE_DATA).sort((a, b) => b.length - a.length);
+    
+    for (let code of sortedCodes) {
+        if (cleaned.startsWith(code)) {
+            return {
+                code: code,
+                data: REGIONAL_PHONE_DATA[code]
+            };
+        }
+    }
+    
+    // Cas spécial pour numéros locaux tchadiens (commençant par 0)
+    if (phone.startsWith('0') && !phone.startsWith('00')) {
+        return {
+            code: '235',
+            data: REGIONAL_PHONE_DATA['235']
+        };
+    }
+    
+    return null;
+}
+
+// Formatage spécialisé pour la région
+function formatRegionalPhone(phone) {
+    if (!phone) return '';
+    
+    const countryInfo = detectRegionalCountry(phone);
+    const cleaned = phone.replace(/\D/g, '');
+    
+    if (!countryInfo) {
+        // Format international générique pour pays non-régionaux
+        if (phone.startsWith('+')) {
+            return phone.replace(/(\+\d{1,4})(\d+)/, '$1 $2');
+        }
+        return phone;
+    }
+    
+    const code = countryInfo.code;
+    let nationalNumber = cleaned.replace(new RegExp(`^${code}`), '');
+    
+    // Formatage spécifique par pays
+    switch (code) {
+        case '235': // Tchad
+            if (phone.startsWith('0')) {
+                // Numéro local tchadien (ex: 066123456 -> 66 12 34 56)
+                const local = phone.replace(/^0/, '');
+                return local.replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4');
+            }
+            return `+235 ${nationalNumber.replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4')}`;
+            
+        case '237': // Cameroun
+            return `+237 ${nationalNumber.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4 $5')}`;
+            
+        case '236': // RCA
+            return `+236 ${nationalNumber.replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4')}`;
+            
+        case '249': // Soudan
+            return `+249 ${nationalNumber.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3')}`;
+            
+        case '234': // Nigéria
+            return `+234 ${nationalNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1 $2 $3')}`;
+            
+        case '227': // Niger
+            return `+227 ${nationalNumber.replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4')}`;
+            
+        case '218': // Libye
+            return `+218 ${nationalNumber.replace(/(\d{2})(\d{3})(\d{4})/, '$1 $2 $3')}`;
+            
+        default:
+            return `+${code} ${nationalNumber}`;
+    }
+}
+
+// ==========================================
+// FONCTIONS DE VALIDATION DU FORMULAIRE
+// ==========================================
+
+// Validation individuelle des champs
+function validateField(field) {
+    const value = field.value.trim();
+    let isValid = true;
+    let errorMessage = '';
+
+    switch(field.type) {
+        case 'email':
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(value)) {
+                errorMessage = 'Format d\'email invalide';
+                isValid = false;
+            }
+            break;
+            
+        case 'tel':
+            if (!validateRegionalPhone(value)) {
+                errorMessage = 'Numéro invalide. Utilisez le format tchadien (66 12 34 56) ou international (+235, +237, etc.)';
+                isValid = false;
+            }
+            break;
+            
+        case 'date':
+            const today = new Date();
+            const birthDate = new Date(value);
+            const age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            
+            if (age < 16 || age > 65) {
+                errorMessage = 'L\'âge doit être entre 16 et 65 ans';
+                isValid = false;
+            }
+            break;
+            
+        default:
+            if (field.hasAttribute('required') && value.length === 0) {
+                errorMessage = 'Ce champ est obligatoire';
+                isValid = false;
+            } else if (field.name === 'nom' && value.length < 2) {
+                errorMessage = 'Le nom doit contenir au moins 2 caractères';
+                isValid = false;
+            }
+    }
+
+    // Appliquer les styles et messages d'erreur
+    if (isValid) {
+        field.style.borderColor = '#4ecdc4';
+        field.style.backgroundColor = '#f8fff8';
+        field.classList.remove('error');
+        field.classList.add('valid');
+        clearFieldError(field.name);
+    } else {
+        field.style.borderColor = '#e74c3c';
+        field.style.backgroundColor = '#fff5f5';
+        field.classList.add('error');
+        field.classList.remove('valid');
+        showFieldError(field.name, errorMessage);
+    }
+
+    return isValid;
+}
+
+// Validation complète du formulaire
+function validateForm() {
+    const form = document.getElementById('inscriptionForm');
+    const inputs = form.querySelectorAll('input[required], select[required]');
+    let isValid = true;
+
+    inputs.forEach(input => {
+        if (!validateField(input)) {
+            isValid = false;
+        }
+    });
+
+    // Validation des conditions d'utilisation
+    const termes = document.getElementById('termes');
+    if (!termes.checked) {
+        showFieldError('termes', 'Vous devez accepter les conditions d\'utilisation');
+        isValid = false;
+    } else {
+        clearFieldError('termes');
+    }
+
+    return isValid;
+}
+
+// Afficher erreur de champ
+function showFieldError(fieldName, message) {
+    const errorElement = document.getElementById(fieldName + 'Error');
+    if (errorElement) {
+        errorElement.textContent = message;
+        errorElement.style.display = 'block';
+    }
+}
+
+// Effacer erreur de champ
+function clearFieldError(fieldName) {
+    const errorElement = document.getElementById(fieldName + 'Error');
+    if (errorElement) {
+        errorElement.textContent = '';
+        errorElement.style.display = 'none';
+    }
+}
+
+// Effacer toutes les erreurs du formulaire
+function clearFormErrors() {
+    const errorElements = document.querySelectorAll('.form-error');
+    errorElements.forEach(el => {
+        el.textContent = '';
+        el.style.display = 'none';
+    });
+    
+    const inputs = document.querySelectorAll('#inscriptionForm input, #inscriptionForm select');
+    inputs.forEach(input => {
+        input.style.borderColor = '#e1e8ed';
+        input.style.backgroundColor = 'white';
+        input.classList.remove('error', 'valid');
+    });
+}
+
+// ==========================================
+// CONFIGURATION DU CHAMP TÉLÉPHONE
+// ==========================================
+
+// Configuration du champ téléphone pour la région
+function setupRegionalPhoneField() {
+    const phoneField = document.getElementById('telephone');
+    if (!phoneField) return;
+    
+    const phoneContainer = phoneField.parentElement;
+    let countryDisplay = phoneContainer.querySelector('.country-display');
+    
+    if (!countryDisplay) {
+        countryDisplay = document.createElement('div');
+        countryDisplay.className = 'country-display';
+        phoneContainer.appendChild(countryDisplay);
+    }
+    
+    phoneField.addEventListener('input', function() {
+        const value = this.value;
+        const countryInfo = detectRegionalCountry(value);
+        
+        if (countryInfo && value.length > 3) {
+            const data = countryInfo.data;
+            const isTchad = countryInfo.code === '235';
+            
+            countryDisplay.className = `country-display show ${isTchad ? 'tchad' : ''}`;
+            
+            countryDisplay.innerHTML = `
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 1.3rem;">${data.flag}</span>
+                        <strong>${data.name}${isTchad ? ' (Votre pays)' : ''}</strong>
+                    </div>
+                    <span style="background: ${isTchad ? 'rgba(255,255,255,0.3)' : '#e74c3c'}; color: white; padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem;">
+                        ${data.region}
+                    </span>
+                </div>
+                <div style="font-size: 0.8rem; color: ${isTchad ? 'rgba(255,255,255,0.9)' : '#555'}; margin-bottom: 0.3rem;">
+                    📱 Format: <code style="background: ${isTchad ? 'rgba(255,255,255,0.2)' : '#f8f9fa'}; color: ${isTchad ? 'white' : 'inherit'}; padding: 0.2rem 0.4rem; border-radius: 3px; font-weight: bold;">${data.format}</code>
+                </div>
+                <div style="font-size: 0.75rem; color: ${isTchad ? 'rgba(255,255,255,0.8)' : '#777'};">
+                    🏢 Opérateurs: ${data.operators.join(', ')}
+                </div>
+            `;
+            countryDisplay.style.display = 'block';
+        } else if (value.length > 5 && value.startsWith('+')) {
+            countryDisplay.className = 'country-display show';
+            countryDisplay.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem;">
+                    <span style="font-size: 1.2rem;">🌍</span>
+                    <strong>Numéro International</strong>
+                </div>
+                <div style="font-size: 0.8rem; color: #555;">
+                    Format automatiquement accepté
+                </div>
+            `;
+            countryDisplay.style.display = 'block';
+        } else {
+            countryDisplay.style.display = 'none';
+            countryDisplay.classList.remove('show');
+        }
+        
+        validateField(this);
+    });
+    
+    phoneField.addEventListener('blur', function() {
+        if (this.value) {
+            this.value = formatRegionalPhone(this.value);
+        }
+    });
+}
+
+// ==========================================
+// FONCTIONS D'AIDE ET EXEMPLES
+// ==========================================
+
+// Fonction pour afficher les exemples de la région
+function showRegionalPhoneExamples() {
+    let html = '<div style="max-width: 500px; text-align: left;">';
+    html += '<h3 style="text-align: center; margin-bottom: 1rem; color: #2c3e50;">📞 Numéros acceptés</h3>';
+    
+    // Tchad en premier (pays principal)
+    const tchad = REGIONAL_PHONE_DATA['235'];
+    html += `
+        <div style="background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span style="font-size: 1.5rem;">${tchad.flag}</span>
+                <strong style="font-size: 1.1rem;">${tchad.name} (Votre pays)</strong>
+            </div>
+            <div style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+                📱 Format: <strong>${tchad.format}</strong>
+            </div>
+            <div style="font-size: 0.85rem;">
+                💡 Exemples: ${tchad.examples.join(', ')}
+            </div>
+            <div style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.9;">
+                🏢 Opérateurs: ${tchad.operators.join(', ')}
+            </div>
+        </div>
+    `;
+    
+    // Pays voisins
+    html += '<h4 style="color: #2c3e50; margin: 1rem 0 0.5rem 0;">🗺️ Pays voisins acceptés :</h4>';
+    
+    Object.entries(REGIONAL_PHONE_DATA).forEach(([code, data]) => {
+        if (code !== '235') { // Exclure le Tchad déjà affiché
+            html += `
+                <div style="background: #f8f9fa; border-left: 4px solid #fdcb6e; padding: 0.75rem; margin-bottom: 0.5rem; border-radius: 5px;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem;">
+                        <span>${data.flag}</span>
+                        <strong>${data.name}</strong>
+                        <span style="font-size: 0.8rem; color: #666;">(+${code})</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #555;">
+                        Exemple: <code style="background: #e9ecef; padding: 0.2rem; border-radius: 3px;">${data.examples[0]}</code>
+                    </div>
+                </div>
+            `;
+        }
+    });
+    
+    html += `
+        <div style="background: #e8f4fd; padding: 0.75rem; border-radius: 5px; margin-top: 1rem; text-align: center;">
+            <div style="font-size: 0.9rem; color: #2c3e50;">
+                🌍 <strong>Autres pays internationaux</strong> également acceptés<br>
+                <span style="font-size: 0.8rem; color: #666;">Format: +XXX XXXXXXXXX</span>
+            </div>
+        </div>
+    `;
+    
+    html += '</div>';
+    
+    showNotification(html, 'info', 12000);
+}
+
+// ==========================================
+// FONCTIONS DU FORMULAIRE
+// ==========================================
+
+// Réinitialiser le formulaire
+function resetForm() {
+    const form = document.getElementById('inscriptionForm');
+    form.reset();
+    clearFormErrors();
+    hidePreview();
+    showNotification('🔄 Formulaire réinitialisé', 'info', 2000);
+}
+
+// Afficher l'aperçu du formulaire
+function showPreview() {
+    const form = document.getElementById('inscriptionForm');
+    const formData = new FormData(form);
+    const preview = document.getElementById('formPreview');
+    const content = document.getElementById('previewContent');
+    
+    if (!formData.get('nom') && !formData.get('email')) return;
+    
+    const previewHtml = `
+        <div style="display: grid; gap: 1rem;">
+            <div><strong>👤 Nom:</strong> ${formData.get('nom') || 'Non renseigné'}</div>
+            <div><strong>📧 Email:</strong> ${formData.get('email') || 'Non renseigné'}</div>
+            <div><strong>📞 Téléphone:</strong> ${formData.get('telephone') || 'Non renseigné'}</div>
+            <div><strong>🎓 Programme:</strong> ${getProgrammeName(formData.get('programme')) || 'Non sélectionné'}</div>
+            <div><strong>📚 Niveau:</strong> ${getNiveauName(formData.get('niveau')) || 'Non sélectionné'}</div>
+            <div><strong>📬 Newsletter:</strong> ${formData.get('newsletter') ? 'Oui' : 'Non'}</div>
+        </div>
+    `;
+    
+    content.innerHTML = previewHtml;
+    preview.style.display = 'block';
+    preview.scrollIntoView({ behavior: 'smooth' });
+}
+
+function hidePreview() {
+    document.getElementById('formPreview').style.display = 'none';
+}
+
+// ==========================================
+// INITIALISATION DU FORMULAIRE
+// ==========================================
+
+// Gestion du formulaire d'inscription
+function initializeInscriptionForm() {
+    const form = document.getElementById('inscriptionForm');
+    if (!form) return;
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Afficher l'état de chargement
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const submitLoading = document.getElementById('submitLoading');
+        
+        if (submitBtn && submitText && submitLoading) {
+            submitText.style.display = 'none';
+            submitLoading.style.display = 'inline';
+            submitBtn.disabled = true;
+        }
+        
+        // Validation
+        if (!validateForm()) {
+            showNotification('⚠️ Veuillez corriger les erreurs dans le formulaire.', 'error');
+            
+            // Restaurer le bouton
+            if (submitBtn && submitText && submitLoading) {
+                submitText.style.display = 'inline';
+                submitLoading.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+            return;
+        }
+        
+        // Simuler un délai de traitement
+        setTimeout(() => {
+            // Collecter les données
+            const formData = new FormData(this);
+            const student = {
+                id: Date.now(),
+                nom: formData.get('nom'),
+                email: formData.get('email'),
+                telephone: formData.get('telephone'),
+                dateNaissance: formData.get('dateNaissance'),
+                programme: formData.get('programme'),
+                niveau: formData.get('niveau'),
+                adresse: formData.get('adresse') || 'Non renseignée',
+                motivation: formData.get('motivation') || 'Non renseignée',
+                newsletter: formData.get('newsletter') ? 'Oui' : 'Non',
+                dateInscription: new Date().toLocaleDateString('fr-FR')
+            };
+
+            // Vérifier si l'email existe déjà
+            const emailExists = students.some(s => s.email === student.email);
+            if (emailExists) {
+                showNotification('❌ Un étudiant avec cet email est déjà inscrit.', 'error');
+                
+                // Restaurer le bouton
+                if (submitBtn && submitText && submitLoading) {
+                    submitText.style.display = 'inline';
+                    submitLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                }
+                return;
+            }
+
+            // Ajouter l'étudiant
+            students.push(student);
+            updateStats();
+            
+            // Message de succès
+            const countryInfo = detectRegionalCountry(student.telephone);
+            const countryFlag = countryInfo ? countryInfo.data.flag : '🌍';
+            
+            showNotification(
+                `🎉 Inscription réussie ! Bienvenue ${student.nom} ${countryFlag} à l'Université Excellence !`, 
+                'success', 
+                5000
+            );
+            
+            // Réinitialiser le formulaire
+            this.reset();
+            clearFormErrors();
+            hidePreview();
+            
+            // Restaurer le bouton
+            if (submitBtn && submitText && submitLoading) {
+                submitText.style.display = 'inline';
+                submitLoading.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+            
+            // Redirection vers la base de données après 3 secondes
+            setTimeout(() => {
+                showPage('database');
+            }, 3000);
+            
+        }, 1500); // Délai de simulation
+    });
+
+    // Validation en temps réel
+    const inputs = form.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('blur', () => validateField(input));
+        input.addEventListener('input', () => {
+            if (input.classList.contains('error')) {
+                validateField(input);
+            }
+        });
+        
+        // Aperçu en temps réel pour les champs principaux
+        if (['nom', 'email', 'programme', 'niveau'].includes(input.name)) {
+            input.addEventListener('input', debounce(showPreview, 1000));
+        }
+    });
+}
+
+// Fonction de debounce pour éviter trop d'appels
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// ==========================================
+// FONCTIONS UTILITAIRES
+// ==========================================
+
+// Fonctions utilitaires pour les noms des programmes et niveaux
+function getProgrammeName(programme) {
+    const programmes = {
+        'sciences': 'Sciences et Technologie',
+        'arts': 'Arts et Lettres',
+        'commerce': 'Commerce et Gestion',
+        'medecine': 'Médecine',
+        'droit': 'Droit',
+        'education': 'Sciences de l\'Éducation'
+    };
+    return programmes[programme] || programme;
+}
+
+function getNiveauName(niveau) {
+    const niveaux = {
+        'licence': 'Licence (Bachelor)',
+        'master': 'Master',
+        'doctorat': 'Doctorat (PhD)'
+    };
+    return niveaux[niveau] || niveau;
+}
+
+// Fonction pour formater (compatibilité)
+function formatPhoneNumber(phone) {
+    return formatRegionalPhone(phone);
+}
+
+// ==========================================
+// MESSAGES D'ACCUEIL SPÉCIALISÉS
+// ==========================================
+
+// Message d'accueil spécialisé pour le Tchad
+function showRegionalWelcome() {
+    const welcomeMessage = `
+        <div style="text-align: center; max-width: 400px;">
+            <h3 style="color: #2c3e50; margin-bottom: 1rem;">🇹🇩 Bienvenue au Tchad !</h3>
+            <p style="margin-bottom: 1rem;">
+                Système optimisé pour le Tchad et les pays voisins :<br>
+                🇹🇩 🇨🇲 🇨🇫 🇸🇩 🇳🇬 🇳🇪 🇱🇾
+            </p>
+            <p style="font-size: 0.9rem; color: #666;">
+                Les numéros internationaux sont également acceptés.
+            </p>
+            <div style="margin-top: 1rem; padding: 0.5rem; background: #fff3cd; border-radius: 5px; font-size: 0.8rem;">
+                💡 Cliquez sur "🇹🇩 Exemples" à côté du champ téléphone pour voir tous les formats acceptés.
+            </div>
+        </div>
+    `;
+    
+    setTimeout(() => {
+        showNotification(welcomeMessage, 'info', 6000);
+    }, 2000);
+}
+
+// ==========================================
+// INITIALISATION GÉNÉRALE
+// ==========================================
+
+// Initialisation complète au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+        // Initialiser le formulaire d'inscription
+        initializeInscriptionForm();
+        
+        // Configurer le champ téléphone
+        setTimeout(() => {
+            setupRegionalPhoneField();
+        }, 500);
+        
+        console.log('✅ Formulaire d\'inscription Tchad + pays voisins initialisé');
+        
+    } catch (error) {
+        console.error('❌ Erreur lors de l\'initialisation du formulaire:', error);
+        showNotification('Erreur lors du chargement du formulaire. Veuillez actualiser la page.', 'error');
+    }
+});
+
+// Lancer le message d'accueil
+window.addEventListener('load', showRegionalWelcome); 
+
+function resetForm() {
+    const form = document.getElementById('inscriptionForm');
+    form.reset();
+    clearFormErrors();
+    showNotification('Formulaire réinitialisé', 'info');
+}
+
+
+function updateDatabase() {
+    const studentList = document.getElementById('studentList');
+    const studentCount = document.getElementById('studentListCount');
+    
+    if (students.length === 0) {
+        studentList.innerHTML = '<p>Aucun étudiant inscrit pour le moment.</p>';
+        studentCount.textContent = '0';
+        return;
+    }
+
+    studentCount.textContent = students.length;
+
+    studentList.innerHTML = students.map(student => `
+        <div class="student-item">
+            <div>
+                <h4>${student.nom}</h4>
+                <p><strong>Programme:</strong> ${getProgrammeName(student.programme)}</p>
+                <p><strong>Niveau:</strong> ${getNiveauName(student.niveau)}</p>
+                <p><strong>Email:</strong> ${student.email}</p>
+                <p><strong>Téléphone:</strong> ${formatPhoneNumber(student.telephone)}</p>
+                <p><strong>Âge:</strong> ${calculateAge(student.dateNaissance)} ans</p>
+                <p><strong>Inscrit le:</strong> ${student.dateInscription}</p>
+            </div>
+            <div>
+                <button class="btn-secondary" onclick="viewStudent(${student.id})" style="margin-bottom: 0.5rem;">👁️ Voir</button>
+                <button class="btn-danger" onclick="removeStudent(${student.id})">🗑️ Supprimer</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Voir détails d'un étudiant
+function viewStudent(id) {
+    const student = students.find(s => s.id === id);
+    if (!student) return;
+
+    const details = `
+        <div style="text-align: left; line-height: 1.8; max-width: 400px;">
+            <h4 style="color: #2c3e50; margin-bottom: 1rem;">👤 ${student.nom}</h4>
+            <p><strong>📧 Email:</strong> ${student.email}</p>
+            <p><strong>📞 Téléphone:</strong> ${formatPhoneNumber(student.telephone)}</p>
+            <p><strong>🎂 Date de naissance:</strong> ${new Date(student.dateNaissance).toLocaleDateString('fr-FR')}</p>
+            <p><strong>👶 Âge:</strong> ${calculateAge(student.dateNaissance)} ans</p>
+            <p><strong>🎓 Programme:</strong> ${getProgrammeName(student.programme)}</p>
+            <p><strong>📚 Niveau:</strong> ${getNiveauName(student.niveau)}</p>
+            <p><strong>🏠 Adresse:</strong> ${student.adresse}</p>
+            <p><strong>📬 Newsletter:</strong> ${student.newsletter}</p>
+            <p><strong>💌 Motivation:</strong> ${student.motivation.substring(0, 100)}${student.motivation.length > 100 ? '...' : ''}</p>
+            <p><strong>📅 Inscrit le:</strong> ${student.dateInscription}</p>
+        </div>
+    `;
+
+    showNotification(details, 'info');
+}
+
+// Supprimer un étudiant
+function removeStudent(id) {
+    const student = students.find(s => s.id === id);
+    if (!student) return;
+
+    if (confirm(`Êtes-vous sûr de vouloir supprimer l'étudiant ${student.nom} ?\n\nCette action est irréversible.`)) {
+        students = students.filter(student => student.id !== id);
+        updateDatabase();
+        updateStats();
+        showNotification(`L'étudiant ${student.nom} a été supprimé avec succès`, 'success');
+    }
+}
+
+// Recherche d'étudiants
+function searchStudents() {
+    const searchTerm = document.getElementById('studentSearch').value.toLowerCase().trim();
+    
+    if (searchTerm === '') {
+        updateDatabase();
+        return;
+    }
+    
+    const filteredStudents = students.filter(student => 
+        student.nom.toLowerCase().includes(searchTerm) ||
+        student.email.toLowerCase().includes(searchTerm) ||
+        getProgrammeName(student.programme).toLowerCase().includes(searchTerm) ||
+        getNiveauName(student.niveau).toLowerCase().includes(searchTerm) ||
+        student.telephone.replace(/\s/g, '').includes(searchTerm.replace(/\s/g, '')) ||
+        student.adresse.toLowerCase().includes(searchTerm)
+    );
+    
+    displayFilteredStudents(filteredStudents);
+    
+    if (filteredStudents.length === 0) {
+        showNotification('Aucun résultat trouvé pour cette recherche', 'info');
+    }
+}
+
+// Afficher étudiants filtrés
+function displayFilteredStudents(filteredStudents) {
+    const studentList = document.getElementById('studentList');
+    const studentCount = document.getElementById('studentListCount');
+    
+    studentCount.textContent = filteredStudents.length;
+    
+    if (filteredStudents.length === 0) {
+        studentList.innerHTML = '<p style="text-align: center; color: #666; font-style: italic;">Aucun étudiant trouvé pour cette recherche.</p>';
+        return;
+    }
+
+    studentList.innerHTML = filteredStudents.map(student => `
+        <div class="student-item">
+            <div>
+                <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">${student.nom}</h4>
+                <p><strong>Programme:</strong> ${getProgrammeName(student.programme)}</p>
+                <p><strong>Niveau:</strong> ${getNiveauName(student.niveau)}</p>
+                <p><strong>Email:</strong> ${student.email}</p>
+                <p><strong>Téléphone:</strong> ${formatPhoneNumber(student.telephone)}</p>
+                <p><strong>Âge:</strong> ${calculateAge(student.dateNaissance)} ans</p>
+                <p><strong>Inscrit le:</strong> ${student.dateInscription}</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <button class="btn-secondary" onclick="viewStudent(${student.id})" title="Voir les détails">👁️ Voir</button>
+                <button class="btn-danger" onclick="removeStudent(${student.id})" title="Supprimer l'étudiant">🗑️ Supprimer</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Filtrer les étudiants par programme et niveau
+function filterStudents() {
+    const programmeFilter = document.getElementById('programmeFilter').value;
+    const niveauFilter = document.getElementById('niveauFilter').value;
+    const searchTerm = document.getElementById('studentSearch').value.toLowerCase().trim();
+    
+    let filteredStudents = students;
+    
+    // Filtrer par programme
+    if (programmeFilter) {
+        filteredStudents = filteredStudents.filter(s => s.programme === programmeFilter);
+    }
+    
+    // Filtrer par niveau
+    if (niveauFilter) {
+        filteredStudents = filteredStudents.filter(s => s.niveau === niveauFilter);
+    }
+    
+    // Filtrer par recherche si elle existe
+    if (searchTerm) {
+        filteredStudents = filteredStudents.filter(student => 
+            student.nom.toLowerCase().includes(searchTerm) ||
+            student.email.toLowerCase().includes(searchTerm) ||
+            getProgrammeName(student.programme).toLowerCase().includes(searchTerm) ||
+            getNiveauName(student.niveau).toLowerCase().includes(searchTerm)
+        );
+    }
+    
+    displayFilteredStudents(filteredStudents);
+    
+    const filterInfo = [];
+    if (programmeFilter) filterInfo.push(getProgrammeName(programmeFilter));
+    if (niveauFilter) filterInfo.push(getNiveauName(niveauFilter));
+    
+    if (filterInfo.length > 0) {
+        showNotification(`Filtrage appliqué: ${filterInfo.join(', ')}`, 'info');
+    }
+}
+
+// Trier les étudiants
+function sortStudents(criteria) {
+    if (students.length === 0) {
+        showNotification('Aucun étudiant à trier', 'info');
+        return;
+    }
+
+    let sortedStudents = [...students];
+    
+    switch(criteria) {
+        case 'nom':
+            sortedStudents.sort((a, b) => a.nom.localeCompare(b.nom, 'fr', { sensitivity: 'base' }));
+            showNotification('Étudiants triés par nom (A-Z)', 'info');
+            break;
+        case 'dateInscription':
+            sortedStudents.sort((a, b) => {
+                const dateA = new Date(a.dateInscription.split('/').reverse().join('-'));
+                const dateB = new Date(b.dateInscription.split('/').reverse().join('-'));
+                return dateB - dateA; // Plus récent en premier
+            });
+            showNotification('Étudiants triés par date d\'inscription (plus récent en premier)', 'info');
+            break;
+        case 'age':
+            sortedStudents.sort((a, b) => calculateAge(a.dateNaissance) - calculateAge(b.dateNaissance));
+            showNotification('Étudiants triés par âge (plus jeune en premier)', 'info');
+            break;
+        case 'programme':
+            sortedStudents.sort((a, b) => getProgrammeName(a.programme).localeCompare(getProgrammeName(b.programme)));
+            showNotification('Étudiants triés par programme', 'info');
+            break;
+    }
+    
+    students = sortedStudents;
+    updateDatabase();
+}
+
+// Vider la base de données
+function clearAllStudents() {
+    if (students.length === 0) {
+        showNotification('La base de données est déjà vide', 'info');
+        return;
+    }
+
+    const studentCount = students.length;
+    if (confirm(`⚠️ ATTENTION ⚠️\n\nÊtes-vous sûr de vouloir supprimer TOUS les ${studentCount} étudiants ?\n\nCette action est IRRÉVERSIBLE !`)) {
+        students = [];
+        updateDatabase();
+        updateStats();
+        
+        // Réinitialiser les filtres
+        document.getElementById('studentSearch').value = '';
+        document.getElementById('programmeFilter').value = '';
+        document.getElementById('niveauFilter').value = '';
+        
+        showNotification(`Base de données vidée - ${studentCount} étudiants supprimés`, 'success');
+    }
+}
+
+// Exporter les données en CSV
+function exportStudentData() {
+    if (students.length === 0) {
+        showNotification('Aucune donnée à exporter', 'error');
+        return;
+    }
+
+    try {
+        const headers = [
+            'Nom', 'Email', 'Téléphone', 'Date de naissance', 'Âge', 
+            'Programme', 'Niveau', 'Adresse', 'Newsletter', 'Motivation', 'Date d\'inscription'
+        ];
+        
+        const csvContent = [
+            headers.join(','),
+            ...students.map(student => [
+                `"${student.nom.replace(/"/g, '""')}"`,
+                `"${student.email}"`,
+                `"${student.telephone}"`,
+                `"${student.dateNaissance}"`,
+                `"${calculateAge(student.dateNaissance)}"`,
+                `"${getProgrammeName(student.programme)}"`,
+                `"${getNiveauName(student.niveau)}"`,
+                `"${student.adresse.replace(/"/g, '""')}"`,
+                `"${student.newsletter}"`,
+                `"${student.motivation.replace(/"/g, '""')}"`,
+                `"${student.dateInscription}"`
+            ].join(','))
+        ].join('\n');
+
+        // Ajouter BOM pour l'UTF-8
+        const BOM = '\uFEFF';
+        const blob = new Blob([BOM + csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        
+        const now = new Date();
+        const filename = `etudiants_universite_excellence_${now.getFullYear()}-${(now.getMonth()+1).toString().padStart(2,'0')}-${now.getDate().toString().padStart(2,'0')}.csv`;
+        
+        link.setAttribute('href', url);
+        link.setAttribute('download', filename);
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        
+        showNotification(`✅ Export réussi: ${students.length} étudiants exportés vers ${filename}`, 'success');
+    } catch (error) {
+        console.error('Erreur lors de l\'export:', error);
+        showNotification('Erreur lors de l\'export des données', 'error');
+    }
+}
+
+// Ajouter des données d'exemple
+function addSampleData() {
+    const sampleStudents = [
+        {
+            id: Date.now() + Math.random(),
+            nom: "Marie Dubois",
+            email: "marie.dubois@email.com",
+            telephone: "0123456789",
+            dateNaissance: "1999-05-15",
+            programme: "sciences",
+            niveau: "master",
+            adresse: "123 Rue de la Science, 75005 Paris",
+            motivation: "Passionnée par la recherche en physique quantique et les nouvelles technologies. Je souhaite contribuer aux avancées scientifiques de demain.",
+            newsletter: "Oui",
+            dateInscription: new Date().toLocaleDateString('fr-FR')
+        },
+        {
+            id: Date.now() + Math.random() + 1,
+            nom: "Alexandre Martin",
+            email: "alex.martin@email.com",
+            telephone: "0987654321",
+            dateNaissance: "2000-08-22",
+            programme: "commerce",
+            niveau: "licence",
+            adresse: "456 Avenue du Commerce, 69000 Lyon",
+            motivation: "Entrepreneur en devenir, intéressé par l'innovation business et le développement durable dans l'entreprise moderne.",
+            newsletter: "Non",
+            dateInscription: new Date().toLocaleDateString('fr-FR')
+        },
+        {
+            id: Date.now() + Math.random() + 2,
+            nom: "Sophie Chen",
+            email: "sophie.chen@email.com",
+            telephone: "0555666777",
+            dateNaissance: "1998-12-03",
+            programme: "arts",
+            niveau: "master",
+            adresse: "789 Boulevard des Arts, 13000 Marseille",
+            motivation: "Artiste passionnée par l'histoire de l'art contemporain et les nouvelles formes d'expression artistique numérique.",
+            newsletter: "Oui",
+            dateInscription: new Date().toLocaleDateString('fr-FR')
+        },
+        {
+            id: Date.now() + Math.random() + 3,
+            nom: "Thomas Lefèvre",
+            email: "thomas.lefevre@email.com",
+            telephone: "0444555666",
+            dateNaissance: "2001-03-10",
+            programme: "medecine",
+            niveau: "licence",
+            adresse: "321 Rue de la Santé, 33000 Bordeaux",
+            motivation: "Vocation médicale depuis l'enfance. Désir d'aider les autres et de contribuer à l'amélioration de la santé publique.",
+            newsletter: "Oui",
+            dateInscription: new Date().toLocaleDateString('fr-FR')
+        },
+        {
+            id: Date.now() + Math.random() + 4,
+            nom: "Fatima Al-Rashid",
+            email: "fatima.alrashid@email.com",
+            telephone: "0333222111",
+            dateNaissance: "1999-11-28",
+            programme: "droit",
+            niveau: "master",
+            adresse: "654 Place de la Justice, 67000 Strasbourg",
+            motivation: "Passionnée par le droit international et les droits humains. Ambition de travailler dans les organisations internationales.",
+            newsletter: "Oui",
+            dateInscription: new Date().toLocaleDateString('fr-FR')
+        }
+    ];
+
+    // Vérifier les doublons d'email
+    const existingEmails = students.map(s => s.email);
+    const newStudents = sampleStudents.filter(s => !existingEmails.includes(s.email));
+
+    if (newStudents.length === 0) {
+        showNotification('Les données d\'exemple sont déjà présentes', 'info');
+        return;
+    }
+
+    students.push(...newStudents);
+    updateDatabase();
+    updateStats();
+    showNotification(`✅ ${newStudents.length} étudiants d'exemple ajoutés avec succès`, 'success');
+}
+
+// Mise à jour des statistiques
+function updateStats() {
+    const total = students.length;
+    
+    // Statistiques par programme
+    const sciences = students.filter(s => s.programme === 'sciences').length;
+    const arts = students.filter(s => s.programme === 'arts').length;
+    const commerce = students.filter(s => s.programme === 'commerce').length;
+    const medecine = students.filter(s => s.programme === 'medecine').length;
+    const droit = students.filter(s => s.programme === 'droit').length;
+    const education = students.filter(s => s.programme === 'education').length;
+    
+    // Statistiques par niveau
+    const licence = students.filter(s => s.niveau === 'licence').length;
+    const master = students.filter(s => s.niveau === 'master').length;
+    const doctorat = students.filter(s => s.niveau === 'doctorat').length;
+    
+    // Âge moyen
+    const averageAge = students.length > 0 ? 
+        Math.round(students.reduce((sum, s) => sum + calculateAge(s.dateNaissance), 0) / students.length) : 0;
+
+    // Mise à jour des éléments du DOM
+    updateElement('studentCount', total);
+    updateElement('totalStudents', total);
+    updateElement('scienceStudents', sciences);
+    updateElement('artsStudents', arts);
+    updateElement('businessStudents', commerce);
+    updateElement('medecineStudents', medecine);
+    updateElement('droitStudents', droit);
+    updateElement('educationStudents', education);
+    updateElement('licenceStudents', licence);
+    updateElement('masterStudents', master);
+    updateElement('doctoratStudents', doctorat);
+    updateElement('averageAge', averageAge);
+}
+
+// Mettre à jour un élément du DOM
+function updateElement(id, value) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.textContent = value;
+        
+        // Animation de mise à jour
+        element.style.transform = 'scale(1.1)';
+        element.style.color = '#e74c3c';
+        setTimeout(() => {
+            element.style.transform = 'scale(1)';
+            element.style.color = '#3498db';
+        }, 200);
+    }
+}
+
+// Animation des statistiques au chargement
+function animateStats() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(stat => {
+        const text = stat.textContent;
+        const finalValue = parseInt(text.replace(/\D/g, '')) || 0;
+        const hasPlus = text.includes('+');
+        const hasPercent = text.includes('%');
+        
+        if (finalValue === 0) return;
+        
+        let currentValue = 0;
+        const increment = Math.max(1, Math.ceil(finalValue / 30));
+        
+        stat.textContent = '0';
+        
+        const animation = setInterval(() => {
+            currentValue += increment;
+            if (currentValue >= finalValue) {
+                let finalText = finalValue.toString();
+                if (hasPlus) finalText += '+';
+                if (hasPercent) finalText += '%';
+                stat.textContent = finalText;
+                clearInterval(animation);
+            } else {
+                stat.textContent = currentValue.toString();
+            }
+        }, 50);
+    });
+}
+
+// Génération de la galerie d'étudiants
+function generateStudentGallery() {
+    const gallery = document.getElementById('studentGallery');
+    if (!gallery) return;
+    
+    const studentPhotos = [];
+
+    // Ajouter les étudiants réellement inscrits
+    students.forEach(student => {
+        studentPhotos.push({
+            name: student.nom,
+            initial: student.nom.charAt(0).toUpperCase(),
+            programme: student.programme,
+            isReal: true
+        });
+    });
+
+    // Ajouter des photos d'exemple pour remplir la galerie
+    const exampleStudents = [
+        {name: 'Alice Martin', programme: 'sciences'},
+        {name: 'Bob Dubois', programme: 'commerce'},
+        {name: 'Claire Leroy', programme: 'arts'},
+        {name: 'David Chen', programme: 'medecine'},
+        {name: 'Emma Wilson', programme: 'droit'},
+        {name: 'Felix Garcia', programme: 'sciences'},
+        {name: 'Grace Kim', programme: 'commerce'},
+        {name: 'Hugo Silva', programme: 'arts'},
+        {name: 'Iris Johnson', programme: 'medecine'},
+        {name: 'Jack Thompson', programme: 'droit'},
+        {name: 'Kara Lopez', programme: 'sciences'},
+        {name: 'Liam Brown', programme: 'commerce'},
+        {name: 'Maya Patel', programme: 'arts'},
+        {name: 'Noah Davis', programme: 'medecine'},
+        {name: 'Olivia Taylor', programme: 'droit'},
+        {name: 'Paul Anderson', programme: 'sciences'}
+    ];
+
+    // Compléter jusqu'à 20 photos
+    while (studentPhotos.length < 20) {
+        const example = exampleStudents[studentPhotos.length % exampleStudents.length];
+        studentPhotos.push({
+            name: example.name,
+            initial: example.name.charAt(0),
+            programme: example.programme,
+            isReal: false
+        });
+    }
+
+    gallery.innerHTML = studentPhotos.map((student, index) => `
+        <div class="student-photo" 
+             style="background: ${getGradientForProgramme(student.programme)}; position: relative;"
+             title="${student.name} - ${getProgrammeName(student.programme)}${student.isReal ? ' (Inscrit)' : ''}"
+             onclick="showStudentInfo('${student.name}', '${student.programme}', ${student.isReal})">
+            ${student.initial}
+            ${student.isReal ? '<div style="position: absolute; top: 5px; right: 5px; color: white; font-size: 0.8rem;">✓</div>' : ''}
+        </div>
+    `).join('');
+}
+
+function getGradientForProgramme(programme) {
+    const gradients = {
+        'sciences': 'linear-gradient(45deg, #667eea, #764ba2)',
+        'arts': 'linear-gradient(45deg, #ff6b6b, #ee5a52)',
+        'commerce': 'linear-gradient(45deg, #4ecdc4, #44a08d)',
+        'medecine': 'linear-gradient(45deg, #45b7d1, #96c93d)',
+        'droit': 'linear-gradient(45deg, #f093fb, #f5576c)',
+        'education': 'linear-gradient(45deg, #ffeaa7, #fdcb6e)'
+    };
+    return gradients[programme] || 'linear-gradient(45deg, #a8e6cf, #dcedc1)';
+}
+
+function showStudentInfo(name, programme, isReal) {
+    const status = isReal ? '✅ Étudiant inscrit' : '👤 Photo d\'exemple';
+    const info = `
+        <div style="text-align: center;">
+            <h4 style="margin-bottom: 0.5rem;">${name}</h4>
+            <p><strong>Programme:</strong> ${getProgrammeName(programme)}</p>
+            <p style="color: ${isReal ? '#27ae60' : '#7f8c8d'}; font-size: 0.9rem;">${status}</p>
+        </div>
+    `;
+    showNotification(info, 'info');
+}
+
+function refreshGallery() {
+    generateStudentGallery();
+    showNotification('🔄 Galerie actualisée', 'info');
+}
+
+function downloadGallery() {
+    showNotification('📸 Téléchargement de la galerie simulé - Fonctionnalité en développement', 'info');
+}
+
+
+function showNotification(message, type = 'success', duration = 5000) {
+    
+    const existingNotifications = document.querySelectorAll(`.notification.${type}`);
+    existingNotifications.forEach(notif => notif.remove());
+
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    
+    const icons = {
+        'success': '✅',
+        'error': '❌',
+        'info': 'ℹ️',
+        'warning': '⚠️'
+    };
+    
+    notification.innerHTML = `
+        <span>${icons[type] || ''} ${message}</span>
+        <button onclick="this.parentElement.remove()" title="Fermer">×</button>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        if (notification.parentElement) {
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => notification.remove(), 300);
+        }
+    }, duration);
+}
+
+function toggleTheme() {
+    const body = document.body;
+    const isDark = body.classList.toggle('dark-mode');
+    const themeBtn = document.getElementById('themeToggle');
+    
+    if (themeBtn) {
+        themeBtn.textContent = isDark ? '☀️' : '🌙';
+        themeBtn.title = isDark ? 'Mode clair' : 'Mode sombre';
+    }
+    
+    body.style.transition = 'all 0.3s ease';
+    setTimeout(() => {
+        body.style.transition = '';
+    }, 300);
+    
+    showNotification(`🌙 Mode ${isDark ? 'sombre' : 'clair'} activé`, 'info', 2000);
+}
+
+function showTerms() {
+    const termsText = `
+        <div style="text-align: left; max-width: 500px;">
+            <h3 style="color: #2c3e50; margin-bottom: 1rem;">📋 Conditions d'utilisation</h3>
+            <p style="margin-bottom: 0.5rem;"><strong>En vous inscrivant à l'Université Excellence, vous acceptez :</strong></p>
+            <ul style="margin-left: 1rem; line-height: 1.6;">
+                <li>✅ De respecter le règlement intérieur de l'université</li>
+                <li>✅ De fournir des informations exactes et à jour</li>
+                <li>✅ De respecter les droits d'auteur et la propriété intellectuelle</li>
+                <li>✅ De maintenir un comportement éthique et respectueux</li>
+                <li>✅ De suivre les directives pédagogiques et administratives</li>
+            </ul>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #7f8c8d;">
+                📞 Pour plus d'informations, contactez notre service juridique.
+            </p>
+        </div>
+    `;
+    showNotification(termsText, 'info', 10000);
+}
+
+
+function getProgrammeName(programme) {
+    const programmes = {
+        'sciences': 'Sciences et Technologie',
+        'arts': 'Arts et Lettres',
+        'commerce': 'Commerce et Gestion',
+        'medecine': 'Médecine',
+        'droit': 'Droit',
+        'education': 'Sciences de l\'Éducation'
+    };
+    return programmes[programme] || programme;
+}
+
+function getNiveauName(niveau) {
+    const niveaux = {
+        'licence': 'Licence (Bachelor)',
+        'master': 'Master',
+        'doctorat': 'Doctorat (PhD)'
+    };
+    return niveaux[niveau] || niveau;
+}
+
+function formatPhoneNumber(phone) {
+    if (!phone) return '';
+    const cleaned = phone.replace(/\D/g, '');
+    return cleaned.replace(/(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4 $5');
+}
+
+function calculateAge(dateNaissance) {
+    if (!dateNaissance) return 0;
+    
+    const today = new Date();
+    const birthDate = new Date(dateNaissance);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    
+    return Math.max(0, age);
+}
+
+
+window.addEventListener('error', function(e) {
+    console.error('Erreur JavaScript détectée:', e.error);
+    showNotification('⚠️ Une erreur technique s\'est produite. Veuillez actualiser la page si le problème persiste.', 'error');
+});
+
+
+window.addEventListener('unhandledrejection', function(e) {
+    console.error('Promesse rejetée non gérée:', e.reason);
+    showNotification('⚠️ Erreur de traitement des données. Veuillez réessayer.', 'error');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+   
+        initializeForm();
+        
+        generateStudentGallery();
+    
+        setTimeout(() => {
+            animateStats();
+        }, 500);
+        
+        setTimeout(() => {
+            showNotification('🎓 Bienvenue sur le site de l\'Université Excellence !', 'success', 3000);
+        }, 1000);
+        
+        if (students.length === 0) {
+            setTimeout(() => {
+                if (confirm('Voulez-vous charger des données d\'exemple pour tester le site ?')) {
+                    addSampleData();
+                }
+            }, 2000);
+        }
+        
+        addVisualEffects();
+        
+        console.log('✅ Site de l\'Université Excellence initialisé avec succès');
+        
+    } catch (error) {
+        console.error('❌ Erreur lors de l\'initialisation:', error);
+        showNotification('Erreur lors du chargement du site. Veuillez actualiser la page.', 'error');
+    }
+});
+
+function addVisualEffects() {
+    try {
+        // Animation d'apparition des cartes au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        setTimeout(() => {
+            const animatedElements = document.querySelectorAll('.feature-card, .staff-card, .stat-card');
+            animatedElements.forEach((el, index) => {
+                // Style initial pour l'animation
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = `all 0.6s ease ${index * 0.1}s`;
+                
+                // Observer l'élément
+                observer.observe(el);
+            });
+        }, 200);
+
+        const hero = document.querySelector('.hero');
+        if (hero) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.5;
+                hero.style.transform = `translateY(${rate}px)`;
+            });
+        }
+
+        const featureIcons = document.querySelectorAll('.feature-icon');
+        featureIcons.forEach(icon => {
+            icon.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.2) rotate(10deg)';
+                this.style.transition = 'all 0.3s ease';
+            });
+            
+            icon.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        const buttons = document.querySelectorAll('.btn, .btn-secondary, .btn-danger');
+        buttons.forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.05)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        
+        const mainTitles = document.querySelectorAll('h1');
+        mainTitles.forEach(title => {
+            const text = title.textContent;
+            title.textContent = '';
+            title.style.borderRight = '2px solid #3498db';
+            
+            let i = 0;
+            const typeWriter = setInterval(() => {
+                if (i < text.length) {
+                    title.textContent += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typeWriter);
+                    setTimeout(() => {
+                        title.style.borderRight = 'none';
+                    }, 500);
+                }
+            }, 50);
+        });
+
+        console.log('✨ Effets visuels initialisés');
+        
+    } catch (error) {
+        console.warn('⚠️ Erreur lors de l\'initialisation des effets visuels:', error);
+    }
+}
+
+document.addEventListener('keydown', function(e) {
+    
+    if (e.ctrlKey || e.metaKey) {
+        switch(e.key) {
+            case 's':
+                e.preventDefault();
+                if (students.length > 0) {
+                    exportStudentData();
+                    showNotification('💾 Export des données déclenché par raccourci clavier', 'info');
+                }
+                break;
+            case 'f':
+                e.preventDefault();
+                const searchInput = document.getElementById('studentSearch');
+                if (searchInput) {
+                    searchInput.focus();
+                    showNotification('🔍 Mode recherche activé', 'info', 1500);
+                }
+                break;
+            case 'n':
+                e.preventDefault();
+                showPage('inscription');
+                showNotification('➕ Redirection vers le formulaire d\'inscription', 'info', 1500);
+                break;
+        }
+    }
+    
+    
+    if (e.key === 'Escape') {
+        const notifications = document.querySelectorAll('.notification');
+        notifications.forEach(notif => notif.remove());
+    }
+});
+
+function autoSave() {
+    if (students.length > 0) {
+        
+        console.log(`💾 Sauvegarde automatique: ${students.length} étudiants`);
+        
+       
+        const dataToSave = {
+            timestamp: new Date().toISOString(),
+            studentCount: students.length,
+            students: students
+        };
+        
+        
+        console.log('📤 Données sauvegardées:', dataToSave);
+    }
+}
+
+
+setInterval(autoSave, 120000);
+
+
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        console.log('👋 Utilisateur a quitté l\'onglet');
+        autoSave(); 
+    } else {
+        console.log('👀 Utilisateur est revenu sur l\'onglet');
+        
+        updateStats();
+    }
+});
+
+
+window.addEventListener('beforeunload', function(e) {
+    if (students.length > 0) {
+        autoSave();
+        
+        
+        const confirmationMessage = 'Des données d\'étudiants sont présentes. Voulez-vous vraiment quitter ?';
+        e.returnValue = confirmationMessage;
+        return confirmationMessage;
+    }
+});
+
+
+function systemDiagnostic() {
+    const diagnostic = {
+        timestamp: new Date().toISOString(),
+        studentCount: students.length,
+        browserInfo: {
+            userAgent: navigator.userAgent,
+            language: navigator.language,
+            cookieEnabled: navigator.cookieEnabled,
+            onLine: navigator.onLine
+        },
+        pageInfo: {
+            url: window.location.href,
+            title: document.title,
+            activePageElements: document.querySelectorAll('.page.active').length
+        },
+        performance: {
+            loadTime: performance.now(),
+            memoryUsage: performance.memory ? {
+                used: performance.memory.usedJSHeapSize,
+                total: performance.memory.totalJSHeapSize,
+                limit: performance.memory.jsHeapSizeLimit
+            } : 'Non disponible'
+        }
+    };
+    
+    console.table(diagnostic);
+    return diagnostic;
+}
+
+
+window.universiteSite = {
+    students: () => students,
+    addStudent: (studentData) => {
+        students.push({
+            id: Date.now(),
+            dateInscription: new Date().toLocaleDateString('fr-FR'),
+            ...studentData
+        });
+        updateDatabase();
+        updateStats();
+    },
+    removeAllStudents: () => {
+        students = [];
+        updateDatabase();
+        updateStats();
+    },
+    exportData: exportStudentData,
+    diagnostic: systemDiagnostic,
+    showNotification: showNotification,
+    version: '1.0.0',
+    lastUpdate: '2025-01-04'
+};
+
+
+console.log(`
+🎓 ====================================
+   UNIVERSITÉ EXCELLENCE - SITE WEB
+   ====================================
+   ✅ Initialisation terminée
+   📊 Version: ${window.universiteSite.version}
+   📅 Dernière mise à jour: ${window.universiteSite.lastUpdate}
+   
+   🔧 Commandes de débogage disponibles:
+   - universiteSite.students() : Voir tous les étudiants
+   - universiteSite.diagnostic() : Diagnostic système
+   - universiteSite.showNotification(msg, type) : Afficher notification
+   
+   ⌨️  Raccourcis clavier:
+   - Ctrl+S : Exporter les données
+   - Ctrl+F : Rechercher
+   - Ctrl+N : Nouveau formulaire
+   - Échap : Fermer les notifications
+   ====================================
+`);
+
+
+function validateSiteIntegrity() {
+    const checks = {
+        navigation: document.querySelectorAll('.nav-link').length > 0,
+        forms: document.getElementById('inscriptionForm') !== null,
+        database: document.getElementById('studentList') !== null,
+        gallery: document.getElementById('studentGallery') !== null,
+        themeToggle: document.getElementById('themeToggle') !== null,
+        statistics: document.querySelectorAll('.stat-card').length > 0
+    };
+    
+    const allChecksPass = Object.values(checks).every(check => check === true);
+    
+    if (allChecksPass) {
+        console.log('✅ Intégrité du site validée - Tous les composants sont présents');
+        showNotification('🚀 Site prêt à l\'utilisation !', 'success', 2000);
+    } else {
+        console.warn('⚠️ Problèmes d\'intégrité détectés:', checks);
+        showNotification('⚠️ Certains composants du site ne sont pas disponibles', 'warning');
+    }
+    
+    return checks;
+}
+
+
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        validateSiteIntegrity();
+    }, 1000);
+});
+
+
+function realTimeUpdates() {
+    
+    setInterval(() => {
+        if (students.length > 0) {
+            
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach(card => {
+                card.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    card.style.transform = 'scale(1)';
+                }, 200);
+            });
+        }
+    }, 30000); 
+}
+
+
+realTimeUpdates();
+
+
+console.log('🎯 Site de l\'Université Excellence - Entièrement chargé et opérationnel !');
+
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        students,
+        showPage,
+        addSampleData,
+        exportStudentData,
+        updateStats,
+        showNotification,
+        toggleTheme
+    };
+}
+
+    
+  </script>
+  
+    
+    
+</body>
+</html>
