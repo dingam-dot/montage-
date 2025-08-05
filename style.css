@@ -629,6 +629,15 @@ button[onclick="showRegionalPhoneExamples()"]:hover {
         grid-template-columns: 1fr;
     }
     
+     body {
+         font-size: 16px;
+    }
+
+    .conteneur {
+        flex-direction: column;
+      }
+    }
+
     .form-actions {
         flex-direction: column;
     }
